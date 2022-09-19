@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="./conversortemperatura.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">
+          Conversor de Temperatura</h1>
+        <p class="page-subtitle">
+          Faça conversão de temperatura entre Celsius, Fahrenheit e Kelvin.</p>
+    </div>
+    
+    <div id="dados" class="dados">
+        <p> Temperatura: <input type="number" name="temp" id="temp">
+          <select id="escolha">
+            <option value="celsius"> °C (Celsius).</option>
+            <option value="faren"> °F (Fahrenheit).</option>
+            <option value="kelvin"> K (Kelvin).</option>
+          </select> para
+          <select id="escolha2">
+            <option value="celsius2"> °C (Celsius).</option>
+            <option value="faren2"> °F (Fahrenheit).</option>
+            <option value="kelvin2"> K (Kelvin).</option>
+          </select>
+          <input type="button" value="Calcular" onclick="calcular ()">
+        </p>
+    
+    </div>
+    <div id="res" class="res">
+    
+    </div>
+    
+    <script src="./conversortemperatura.js"></script>
+</body>
+</html>
